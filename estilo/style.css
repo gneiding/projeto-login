@@ -5,4 +5,44 @@
     Azul escuro: #115DBF
     Azul médio: #4B89BF
     Azul claro: #1EB7D9
+    Azul muito claro: #C4F2F2
 */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #115DBF;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+
+section#login {
+    background-color: #C4F2F2;
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute; 
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#imagem {
+    height: 200px;
+    background: #C4F2F2 url(../imagens/piramide.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 20px;
+}
+
