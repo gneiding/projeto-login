@@ -8,8 +8,9 @@
     Azul muito claro: #C4F2F2
 */
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -27,15 +28,17 @@ main {
 }
 
 section#login {
-    background-color: #C4F2F2;
+    background-color: #1EB7D9;
     width: 95%;
-    padding: 10px;
-    border-radius: 10px;
+    max-width: 800px;
+    padding: 1em;
     position: absolute; 
     margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 25px 54px -15px rgba(0,0,0,0.33);
 }
 
 div#imagem {
@@ -44,5 +47,68 @@ div#imagem {
     background-size: cover;
     background-position: bottom center;
     margin-bottom: 20px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+
+h1 {
+    font-size: 1.6em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.22);
+}
+
+p {
+    margin: 1em 0 ;
+}
+
+
+
+input {
+    height:2.2em;
+
+    border-style: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #C4F2F2;
+}
+
+input:focus {
+    background-color: white;
+}
+
+input#iusername {
+    padding-left: 5px;
+}
+
+input#ipassword {
+    margin: 1em 0;
+    padding-left: 5px;
+}
+
+input#enviar {
+    width: 90%;
+    height: 40px;
+    display: block;
+    margin: 0.6em auto;
+    font-weight: bolder;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.22);
+    background-color: #115DBF;
+    color: white;
+    transition-duration: 200ms;
+    border: solid 2px #115DBF;
+    border-radius: 5px;
+    
+}
+
+input#enviar:hover {
+    background-color: #C4F2F2;
+    color: #115DBF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.46);
+}
+
+label > span {
+    background-color: #115DBF;
+    color: white;
+    padding: 0.2em;
+    border-radius: 5px 0 0 5px;
+    margin-right: -3px;
 }
 
