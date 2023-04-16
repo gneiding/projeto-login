@@ -36,26 +36,11 @@ section#login {
     box-shadow: 0 25px 54px -15px rgba(0,0,0,0.33);
     border-radius: 10px;
     width: 350px;
-    height: 550px;
+    height: 570px;
     
     transform: translate(-50%, -50%);    
     transition: width 0.3s, height 0.3s;
 }
-
-div#imagem {
-    display: block;
-    height: 200px;
-    background: #C4F2F2 url(../imagens/piramide.jpg) no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    margin-bottom: 20px;
-}
-
-div#formulario {
-    display: block;
-    padding: 1em;
-}
-
 
 h1 {
     text-align: center;
@@ -67,42 +52,67 @@ section#login p {
     font-size: 0.8em;
 }
 
+div#imagem {
+    display: block;
+    height: 200px;
 
-
-input {
-    height:2.2em;
-
-    border-style: none;
-    border-radius: 0 5px 5px 0;
-    background-color: #C4F2F2;
+    background: #C4F2F2 url(../imagens/piramide.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    margin-bottom: 20px;
 }
 
-input:focus {
+div#formulario {
+    display: block;
+    padding: 1em;
+}
+
+div#formulario .campo {
+    background-color: #115DBF;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+.campo input {
+    height:42px;
+    width: calc(100% - 49px);
+    
+    background-color: #C4F2F2;
+    border: solid 2px #115DBF;
+    border-radius: 8px;
+    padding: 4px;
+
+    transform: translateY(-4px);
+
+}
+
+input:focus-within {
     background-color: white;
 }
 
-input#iusername {
-    padding-left: 5px;
+label > span {
+    width: 40px;
+    color: white;
+    padding: 10px;
 }
 
-input#ipassword {
-    margin: 1em 0;
-    padding-left: 5px;
-}
 
 input#enviar {
+    display: block;
+    margin: 20px auto 20px auto;
     width: 90%;
     height: 40px;
-    display: block;
-    margin: 0.6em auto;
+    
     font-weight: bolder;
+    color: white;
+
     box-shadow: 0 5px 10px rgba(0,0,0,0.22);
     background-color: #115DBF;
-    color: white;
-    transition-duration: 200ms;
     border: solid 2px #115DBF;
-    border-radius: 5px;
+    border-radius: 5px;    
     
+    transition-duration: 200ms;
+    cursor: pointer;    
 }
 
 input#enviar:hover {
@@ -111,11 +121,11 @@ input#enviar:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.46);
 }
 
-label > span {
-    background-color: #115DBF;
-    color: white;
-    padding: 0.2em;
-    border-radius: 5px 0 0 5px;
-    margin-right: -3px;
-}
+section#login a {
+    display: block;
+    
+    text-align: center;
+    font-size: 0.8em;
 
+    margin-top: 20px;
+}
