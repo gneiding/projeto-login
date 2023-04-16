@@ -28,26 +28,33 @@ main {
 }
 
 section#login {
-    background-color: #1EB7D9;
-    width: 95%;
-    max-width: 800px;
-    padding: 1em;
-    position: absolute; 
-    margin: 0;
+    overflow: hidden;
+    position: absolute;     
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
+
+    background-color: #1EB7D9;
     box-shadow: 0 25px 54px -15px rgba(0,0,0,0.33);
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    
+    transform: translate(-50%, -50%);    
+    transition: width 0.3s, height 0.3s;
 }
 
 div#imagem {
+    display: block;
     height: 200px;
     background: #C4F2F2 url(../imagens/piramide.jpg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     margin-bottom: 20px;
-    border-radius: 10px 10px 0 0 ;
+}
+
+div#formulario {
+    display: block;
+    padding: 1em;
 }
 
 
