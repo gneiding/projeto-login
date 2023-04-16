@@ -18,17 +18,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.php" method="post">
-                    <label for="iusername"><span class="material-symbols-outlined">
-                        person
-                        </span></label>
-                    <input type="text" name="username" id="iusername" required>
-                    <br/>
-                    <label for="ipassword"><span class="material-symbols-outlined">
-                        lock_open
-                        </span></label>
-                    <input type="password" name="password" id="ipassword" required>
-                    <br/>
+                    <div class="campo">
+                        <label for="iusername"><span class="material-symbols-outlined">
+                            person
+                            </span></label>
+                        <input type="email" name="username" id="iusername" required maxlength="30">
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="ipassword"><span class="material-symbols-outlined">
+                            lock_open
+                            </span></label>
+                        <input type="password" name="password" id="ipassword" required minlength="8" maxlength="20">
+                    </div>                    
                     <input type="submit" value="Fazer login" id="enviar">
+                    <a href="esqueci.html">Esqueci minha senha <span class="material-symbols-outlined">
+                        mail
+                        </span></a>
                 </form>
             </div>
         </section>
